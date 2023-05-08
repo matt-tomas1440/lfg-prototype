@@ -1,6 +1,40 @@
 //
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+//
 
 // Add extra styles here
+
+.code-box {
+    background-color: #f9f9f8;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bfc1c3;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+  }
+
+  .hero-banner {
+    background-color: #1d70b8;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #A2A2A2;
+  }
+
+  .hero-text-box {
+    width: 60em;
+  }
+
+
+  .hero-title {
+    color: white;
+  }
+
+  .hero-text {
+    color: white;
+  }

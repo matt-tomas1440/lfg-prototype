@@ -1,0 +1,172 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+{{ serviceName }} - jinja
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+    <div class="moj-header__container">
+  
+      <div class="moj-header__logo">
+  
+        <a class="moj-header__link moj-header__link--organisation-name" href="index">LFG</a>
+  
+        <a class="moj-header__link moj-header__link--service-name" href="index"> {{ serviceName }}</a>
+      </div>
+    </div>
+  
+  </header>
+  <div class="moj-primary-navigation">
+  
+    <div class="moj-primary-navigation__container">
+  
+      <div class="moj-primary-navigation__nav">
+  
+        <nav class="moj-primary-navigation" aria-label="Primary navigation">
+  
+          <ul class="moj-primary-navigation__list">
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/world/starting-city">World</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/adventures/adventure-one">Adventures</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/sessions/session-one">Sessions</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/look-ups/dungeon">Look-up tables</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+                <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+              </li>
+          </ul>
+  
+        </nav>
+  
+      </div>
+    </div>
+  
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+
+    <nav class="moj-side-navigation" aria-label="Side navigation">
+      <h4 class="moj-side-navigation__title">Blight Over Brynderwold</h4>
+      <ul class="moj-side-navigation__list">
+        <li class="moj-side-navigation__item">
+          <a href="#">Introduction</a>
+        </li>
+
+        <li class="moj-side-navigation__item">
+          <a href="#palsy">Pinkskin palsy</a>
+        </li>
+
+        <li class="moj-side-navigation__item">
+          <a href="#brynderwold">brynderwold</a>
+        </li>
+
+        <li class="moj-side-navigation__item">
+          <a href="#5-">5.</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <span class="govuk-caption-xl">Adventures</span>
+    <h1 class="govuk-heading-xl">
+        1. Blight Over Brynderwold
+    </h1>
+
+    <div class="code-box">
+      <h2 class="govuk-heading-l" id="1-blight">Rumours and hooks</h2>
+
+      <p class="govuk-body">Pinkscab Palsy has struck the lake side outpost 
+        of Brynderwold, causing severe weakness or death in the afflicted. 
+        The Burgomaster is at his wit’s end searching for the source, and 
+        is offering good coin to investigators to root out the cause, and 
+        cleanse the town.</p> 
+    </div>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >Troubling Times</h2>
+
+    <p class="govuk-body">Brynderwold, a longstanding mining and fishing 
+        outpost on the eastern shores of Lake Argos, is in trouble. Protected 
+        from most threats by towering cliffs and treacherous waters, the 
+        settlement’s woes began four months ago, when a number of the residents 
+        contracted Pinkscab Palsy.<p>
+
+    <p>Despite compulsory quarantining, cleansing by fire, and Apothecary 
+        Benceini’s (Karok albino, 5’4”, often donning his beaked contagion mask 
+        and gloves) careful ministrations, the disease somehow continues to spread, 
+        corrupting the inhabitants at an increasing rate.</p>
+
+    <p>Brynderwold’s leader, Burgomaster Shand, is growing desperate, and has 
+        offered 400 gold crowns to anyone who can solve the mystery and rid the 
+        outpost of contamination.</p>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" id="palsy">Pinkscab Palsy</h2>
+
+
+    <p class="govuk-body">Pinkscab Palsy manifests as a red, irritating rash that 
+        swiftly extends across the body in 24 hours. Scratching leads to oozing 
+        scabs, until the third day manifests as severe muscle weakness, dragging 
+        gait and involuntary tremors (1d6 Str and Dex loss, half movement rate).<p>
+
+    <p>Previously healthy adults generally recover in four to six weeks, but children,
+         the infirm, and the elderly often fail to pull through, succumbing to 
+         critical organ failure.</p>
+
+    <p>The hitherto unknown disease is normally propagated by vermin and their 
+        fleas or mites (body fluids, bites, faeces, etc). In this instance however, 
+        the palsy is also being spread by a tribe of humanoid ratfolk known as 
+        <a href="../monsters/monsters.html" class="govuk-link">Skratt</a> (hiding in the sewers by day, and infiltrating the streets by night).</p>
+
+    <p class="govuk-body">The PCs might become involved in this adventure for 
+        the gold, because a friend or relative recently died to the disease, 
+        or because they get attacked on the streets at night (see Street 
+        Encounter 10).</p>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" id="brynderwold">Brynderwold</h2>
+
+
+    <p class="govuk-body">By any standard, Brynderwold has never been a happy place, but its present mood is palpably glum. A week of unrelenting rain, mud churned streets and frostbitten winds, compounded by the growing fear of contagion, have spun a depressing pall over the entire community.<p>
+
+    <p>The chance of random infection by a PC (via flea bites etc) is relatively low; 5% per week that they remain at the outpost. PCs that purposefully keep to themselves, don’t drink the water, etc automaically avoid infection for the first month</p>
+
+    <p>Most of the 300 strong town is presently clear of the palsy, but the numbers rise each week (30 last fortnight, increasing to 37 last week). The sick are quarantined in Area 13, the dead burnt and cast into the sewers (eaten by the skratt as carrion) or buried (a handful of bodies have been dug up by the ratfolk, see Area 5).</p>
+
+    <p class="govuk-body">The PCs might become involved in this adventure for 
+        the gold, because a friend or relative recently died to the disease, 
+        or because they get attacked on the streets at night (see Street 
+        Encounter 10).</p>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+  </div>
+</div>
+
+{% endblock %}

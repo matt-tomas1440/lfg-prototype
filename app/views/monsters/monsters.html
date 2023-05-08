@@ -1,0 +1,169 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+{{ serviceName }} - jinja
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+    <div class="moj-header__container">
+  
+      <div class="moj-header__logo">
+  
+        <a class="moj-header__link moj-header__link--organisation-name" href="../index">LFG</a>
+  
+        <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+      </div>
+    </div>
+  
+  </header>
+  <div class="moj-primary-navigation">
+  
+    <div class="moj-primary-navigation__container">
+  
+      <div class="moj-primary-navigation__nav">
+  
+        <nav class="moj-primary-navigation" aria-label="Primary navigation">
+  
+          <ul class="moj-primary-navigation__list">
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/world/starting-city">World</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/adventures/adventure-one">Adventures</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/sessions/session-one">Sessions</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/look-ups/dungeon">Look-up tables</a>
+            </li>
+  
+            <li class="moj-primary-navigation__item">
+              <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+            </li>
+          </ul>
+  
+        </nav>
+  
+      </div>
+    </div>
+  
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+
+    <nav class="moj-side-navigation" aria-label="Side navigation">
+      <h4 class="moj-side-navigation__title">Monsters</h4>
+      <ul class="moj-side-navigation__list">
+        <li class="moj-side-navigation__item">
+          <a href="#">The Skratt</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <h2 class="govuk-heading-l" id="skratt">The Skratt</h2>
+
+    <p class="govuk-body">The Skratt are 5 ft, rat like humanoids with rodent heads, furred bodies, and bald tails. They move on two or four limbs as required, communicating in low chirps, high chitters and aggressive hisses, baring yellowed claws and fangs when threatened.<p>
+
+    <p>Like most vermin, the skratt are disease laden, skulking scavengers, careful to avoid physical danger unless necessary. Once engaged however, the ratmen fight with desperate fury, exploiting any obvious weakness in their foe. The skratt take no prisoners, and leave no survivors, preferring to eat slain enemies whenever possible (whilst technically omnivores, they prefer carrion).</p>
+    
+    <p>For just over four months, the skratt have been living in the sewers beneath Brynderwold, hiding and sleeping during the day. Between midnight and dawn the ratmen emerge for brief forays above ground, spreading the disease about the
+            complex, hoping for more dead to feed upon.</p>
+
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">The Skratt</caption>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">AC</th>
+            <td class="govuk-table__cell">11</td>
+            </tr>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">HD</th>
+            <td class="govuk-table__cell">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Attacks</th>
+            <td class="govuk-table__cell">Bite : 1d6 or weapon</td>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">19</th>
+            <td class="govuk-table__cell">The skratt uses its tail to trip the target</td>
+            </tr>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Stats</th>
+            <td class="govuk-table__cell">
+
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Str</th>
+                        <td class="govuk-table__cell">10</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Dex</th>
+                        <td class="govuk-table__cell">13</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Con</th>
+                        <td class="govuk-table__cell">8</td>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Int</th>
+                        <td class="govuk-table__cell">9</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Per</th>
+                        <td class="govuk-table__cell">13</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Wis</th>
+                        <td class="govuk-table__cell">7</td>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Chr</th>
+                        <td class="govuk-table__cell">8</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+            </tr>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Luck</th>
+            <td class="govuk-table__cell">5</td>
+            <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Move</th>
+            <td class="govuk-table__cell">40 ft inc climb & swim</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Special</th>
+                <td class="govuk-table__cell">A skratt’s bite has a 50% chance of infecting the target with disease (Con check resists, in this adventure Pinkscab Palsy).</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Special</th>
+                <td class="govuk-table__cell">Skratt see as well in darkness as in light.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+  </div>
+</div>
+
+{% endblock %}
