@@ -1,0 +1,250 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">LFG</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/world/brynderwold">World</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/adventures/blight-over-brynderwold">Adventures</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+  
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+        <h4 class="moj-side-navigation__title">Towns and Cities</h4>
+        <ul class="moj-side-navigation__list">
+          <li class="moj-side-navigation__item">
+            <a href="#">Brynderwold</a>
+          </li>
+        </ul>
+      </nav>
+  
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+        
+        <span class="govuk-caption-xl">World</span>
+        <h1 class="govuk-heading-xl">
+          Cities
+        </h1>
+
+        <h2 class="govuk-heading-l" id="town">Brynderwold</h2>
+
+        <img src='/public/images/brynderwold-map.png'  class="govuk-!-margin-bottom-5" width="600">
+
+        <p class="govuk-body">A longstanding mining and fishing outpost on the 
+          eastern shores of Lake Argos, protected from most threats by towering 
+          cliffs and treacherous waters. Population 300.</p> 
+
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Town Locations
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <h3 class="govuk-heading-s" id="locations">1 - Guard Barracks</h3>
+
+              <p class="govuk-body-s">2d6+10 guard are on duty here at all times, with 
+                an array of weapons at their disposal, including heavy crossbows, fire 
+                pots a wheeled ballista.</p> 
+
+              <h3 class="govuk-heading-s" id="locations">2 - The Half Stump</h3>
+
+              <p class="govuk-body-s">The Half Stump is a two storey wooden inn with a 
+                large common room, fireplace, and a handful of small, clean upstairs 
+                guest quarters. The menu standouts are seared trout, mutton & beets, 
+                and pork with potato surprise. At least 3d6 residents are here until 
+                late, drinking, socialising and complaining.</p>
+
+              <h3 class="govuk-heading-s" id="locations">3 - Stables</h3>
+
+              <h3 class="govuk-heading-s" id="locations">4 - Domiciles</h3>
+
+              <h3 class="govuk-heading-s" id="locations">5 - Great Falls Graveyard</h3>
+
+              <p class="govuk-body-s">A roaring waterfall cascades down the cliffs here, neatly 
+                dividing Brynderwold into eastern and western banks. Winding caves behind the 
+                downpour lead to series of catacombs where some of the town’s dead are buried 
+                (others choose to be cremated, or released on flaming barges into the Lake).</p>
+
+              <h3 class="govuk-heading-s" id="locations">6 - Temple of the Starmaiden</h3>
+
+              <p class="govuk-body-s">Priestesses of Argona (Goddess of health, wealth, 
+                happiness and hope) tend to the only temple in the complex, a large stone church 
+                with a tall belltower. Argona’s shield and star icon is emblazoned above the entry 
+                doors. The vast majority of Brynderwold’s population attends services each week. 
+                Mother Jenora (5’9” female, S14, Will 14, dark haired, heavy set, pious and 
+                protective) heads the order, and is often out and about tending to her flock.</p>
+
+              <h3 class="govuk-heading-s" id="locations">7 - Mines & Forge</h3>
+
+              <p class="govuk-body-s">A small copper mine operates here, digging shafts into the 
+                cliffs of the Ironhull Mountains. In recent times, a sinkhole appeared in one 
+                of the deep tunnels, leading to the dungeon under the cliff.</p>
+
+              <h3 class="govuk-heading-s" id="locations">8 - Watch towers</h3>
+
+              <h3 class="govuk-heading-s" id="locations">9 - Overseer’s Residence</h3>
+
+              <h3 class="govuk-heading-s" id="locations">10 - Apothecary</h3>
+
+              <p class="govuk-body-s">Apothecary Benceini resides in a relatively large 
+                home which includes an attached infirmary</p>
+
+              <h3 class="govuk-heading-s" id="locations">11 - Marketplace</h3>
+
+              <p class="govuk-body-s">The main cluster of shops and services are located 
+                here, including a general store (clothes, lighting, some foods, etc), 
+                growers’ market, fish market, leatherworker, weaver, herbalist, and 
+                brothel. The seven owners collectively refer to themselves as “the 
+                marketplace” and wield considerable political clout.</p>
+
+              <h3 class="govuk-heading-s" id="locations">12 - Townhall</h3>
+
+              <p class="govuk-body-s">The town hall is a large two storey stone structure with 
+                an internal balcony, able to hold up to 400 people. The town’s coat of arms (a 
+                black kite shield with copper anvil) is displayed on a large tapestry above a 
+                raised stage.</p>
+
+              <p class="govuk-body-s">A small office off to one side belongs to Exchequer Sarsi (6’ female, skinny, 
+                expensive garb, honest and shrewd with a piercing gaze), who manages the outpost’s 
+                taxes, licences, bounties, etc, and their records. The Exchequer is quite 
+                meticulous in her role</p>
+              
+              <h3 class="govuk-heading-s" id="locations">13 - Docks</h3>
+
+              <h3 class="govuk-heading-s" id="locations">14 - Domiciles</h3>
+
+              <h3 class="govuk-heading-s" id="locations">15 - Lake ruins</h3>
+
+              <p class="govuk-body-s">Burnt out stone ruins and rotting pylons are all that remain the old lake 
+                watch house (razed by pirates eight years ago). The area is now home to a 
+                Giant Crocodile that feeds on fish and other marine creatures. The locals 
+                avoid the beast, and by and large it avoids them (a few even consider it 
+                a kind of “town mascot”).</p>
+
+              <h3 class="govuk-heading-s" id="locations">Sewers</h3>
+
+              <img src='/public/images/sewer-map.png'  class="govuk-!-margin-bottom-5" width="600">
+
+              <p class="govuk-body-s">The sewers Run underneath the whole town. Location 5 on the 
+                map links to the lost temple of Baal under the cliffs. </p>
+
+                <h3 class="govuk-heading-s" id="locations">Temple of Baal</h3>
+
+                <p class="govuk-body-s">The templae of Baal can be accessed via the mine and 
+                  also via the sewer. It is a large 70ft natural caveren with a 30ft stone 
+                  statue of Baal at one end. Baal is the god of disease and ecay and looks 
+                  like the great unclean one.</p>
+            </div>
+          </div>
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  NPCs
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <h3 class="govuk-heading-s" id="locations">Burgomaster Shand</h3>
+
+              <p class="govuk-body-s">Controls the settlement, empowered by a partnership of 
+                merchants to act as Outpost Justicar, and ensure the mining and fishing 
+                operations continue to meet caravan schedules.
+              </p>
+              <p class="govuk-body-s">AC 11, HD 3, Sword 1d8+3 (two hands), 19: 1d4 guardsmen appear to assist Shand, 
+                S10 D15 C11 I14 P11 W16 Ch15, L6, Mv 30 ft.<br> Shand
+               has advantage on persuasion related checks and speaks a bit of 
+               everything (Bardic Knowledge). He may use the Bard Inspire Greatness 
+               ability twice per combat.</p>
+               <p class="govuk-body-s">Shand (6’2” male, dark goatee, aura of gravitas, efficient, spectacles, 
+                never without his hat) is a reasonable warrior but is most respected for his 
+                outstanding leadership. Loved by his allies and hated by his foes, the 
+                Overseer is generally fair</p>
+
+              <h3 class="govuk-heading-s" id="locations">Half stump owner Ethel</h3>
+
+              <p class="govuk-body-s"> 5’8” ft, 
+                slim, late 20s female, Int 13, Cha 14, limp, sarcastic but generous, 
+                enjoys trading good natured insults, “Yeah, better my gimpy leg than 
+                your gimpy face, am I right?”.</p>
+
+              <h3 class="govuk-heading-s" id="locations">Sergeant Kaden</h3>
+
+              <p class="govuk-body-s"> 3 HD, 6 ft burly 40s male in 
+                half plate, shouter, hold grudges, greets outsiders with strong dose of 
+                old school suspicion.</p>
+            </div>
+          </div>
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Plot hooks
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <h3 class="govuk-heading-s" id="locations">Grateful town</h3>
+
+              <p class="govuk-body-s"> The residents of the town remember how the PCs saved them from the curse of Baal. </p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

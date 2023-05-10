@@ -1,4 +1,4 @@
-{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
 
 {% block pageTitle %}
   {{ serviceName }}
@@ -11,9 +11,9 @@
 
     <div class="moj-header__logo">
 
-      <a class="moj-header__link moj-header__link--organisation-name" href="index">LFG</a>
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">LFG</a>
 
-      <a class="moj-header__link moj-header__link--service-name" href="index"> {{ serviceName }}</a>
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
     </div>
   </div>
 
@@ -28,15 +28,11 @@
 
         <ul class="moj-primary-navigation__list">
           <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/world/starting-city">World</a>
+            <a class="moj-primary-navigation__link" href="/world/brynderwold">World</a>
           </li>
 
           <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/adventures/adventure-one">Adventures</a>
-          </li>
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/sessions/session-one">Sessions</a>
+            <a class="moj-primary-navigation__link" href="/adventures/blight-over-brynderwold">Adventures</a>
           </li>
 
           <li class="moj-primary-navigation__item">
@@ -44,11 +40,7 @@
           </li>
 
           <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/look-ups/dungeon">Look-up tables</a>
-          </li>
-
-          <li class="moj-primary-navigation__item">
-            <a class="moj-primary-navigation__link" href="/extras/calculators">Extras</a>
+            <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
           </li>
         </ul>
 
