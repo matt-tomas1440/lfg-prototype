@@ -1,0 +1,134 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">LFG</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/world/brynderwold">World</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/adventures/blight-over-brynderwold">Adventures</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+  
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+        <h4 class="moj-side-navigation__title">Cities</h4>
+        <ul class="moj-side-navigation__list">
+          <li class="moj-side-navigation__item">
+            <a href="vorngard">Vorngard</a>
+          </li>
+        </ul>
+        
+        <h4 class="moj-side-navigation__title">Towns</h4>
+        <ul class="moj-side-navigation__list">
+          <li class="moj-side-navigation__item">
+            <a href="brynderwold">Brynderwold</a>
+          </li>
+        </ul>
+      </nav>
+  
+  
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+        
+        <span class="govuk-caption-xl">World</span>
+        <h1 class="govuk-heading-xl">
+          Cities
+        </h1>
+
+        <h2 class="govuk-heading-l" id="town">Vorngard</h2>
+
+        <img src='/public/images/city-vorngard.png'  class="govuk-!-margin-bottom-5" width="600">
+
+        <p class="govuk-body">Vornguard </p> 
+
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  City Locations
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              
+            </div>
+          </div>
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  NPCs
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              
+            </div>
+          </div>
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Plot hooks
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
