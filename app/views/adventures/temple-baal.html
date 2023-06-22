@@ -1,0 +1,249 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+{{ serviceName }} - The temple of Baal
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">LFG</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/world/brynderwold">World</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/adventures/blight-over-brynderwold">Adventures</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+
+    <nav class="moj-side-navigation" aria-label="Side navigation">
+      <h4 class="moj-side-navigation__title">Adventures</h4>
+      <ul class="moj-side-navigation__list">
+        <li class="moj-side-navigation__item">
+          <a href="blight">Blight Over Brynderwold</a>
+        </li>
+
+        <li class="moj-side-navigation__item">
+          <a href="temple-baal">The temple of Baal</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <span class="govuk-caption-xl">Adventures</span>
+    <h1 class="govuk-heading-xl">
+        2. The temple of Baal
+    </h1>
+
+    <div class="code-box">
+      <h2 class="govuk-heading-l" id="1-blight">Rumours and hooks</h2>
+
+      <p class="govuk-body">Wo Gong, the mine boss of Brynderwold was running an smuggling operation, taking 
+        profits out of the mine. He found a 
+        amulet one day in the mine and kept it. Unbeknowst to him, this amulet was 
+        a token of Baal and allowed the servents of the God of Pestilance to whisper to his subconsious.</p> 
+
+      <p class="govuk-body">
+      Not long after he discovered a hidden chamber 
+      with a huge shrine to Baal, ancient God of decay and pestilance within the mine. This was not a coincedence.
+        The whispering told him he was going to be discovered and told him he needed a distraction. He followed a 
+        ritual that he thought would cause a distraction to help him escape. This ritual brought a plague to the 
+        town and terrified Wong. It was at this point the adventurers appeared, cleared up the plague and destroyed 
+        the idol. Wong was arrested and put in jail alongwith his associate Karg.</p> 
+
+      <p class="govuk-body">This adventure starts with the adventurers relaxing at the 'Half Stump' when in walks 
+        Sergeant Kaden looking doer. He informs the players that Wong has vanished and the guardsmen stationed to his cell has been brutally murdered.
+      </p> 
+    </div>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >1. Investigations (NPC interaction - Bard)</h2>
+
+
+    <p class="govuk-body govuk-!-font-weight-bold">Investigation clues - Karg</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Knows nothing about the temple of Baal. Was in it solely for the cash</li>
+      <li>Noticed increasingly strange behaviour. Disappered for days at time and no-one was to go into mine.</li>
+      <li>Noticed incessant drawing on parchment</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Investigation clues - Pub</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Stopped coming in for food</li>
+      <li>always fiddling with necklace</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Investigation clues - prison</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>guard neck sliced, already infected and rotted</li>
+      <li>prison broken open, no magic or acid</li>
+      <li>traces of mud throughout</li>
+      <li>also a bit of reed, from a swamp</li>
+      <li>flies and maggots</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Investigation clues - Wongs office</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Paper everywhere</li>
+      <li>Drawings covering all paper</li>
+      <li>Drawings showing rot demons again and again</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Investigation clues - Wongs house</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Food left out to rot (on purpose)</li>
+      <li>flies and maggots</li>
+      <li>bedroom, has bag packed</li>
+      <li>fireplace has burnt paper. Paper shows direction to temple of rot but is mostly burnt</li>
+    </ul>
+
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >2. The ambush (combat)</h2>
+
+    <div class="code-box">
+      <p class="govuk-body govuk-!-font-weight-bold"><i>The lanscape starts to change as you ride into the fog of the morning. 
+        The open plains start to change to a rock and tor covered landscape and the landscape becomes 
+        much more wet and wild.</i></p> 
+  
+        <p class="govuk-body govuk-!-font-weight-bold"><i>
+          
+          Soon you are walking through a canyon, hills changeing to boulder covered 
+          slopes, changing to cliffs raising on both sides. The weather becomes foggy and wet and soon your 
+          cloths are soaked through. The horses become agitated and nervous.</i></p> 
+    </div>
+
+    <p class="govuk-body">2 days in. </p> 
+
+    <p class="govuk-body">5 cultists wait in ambush. Armed with daggers</p> 
+
+    <img src='/public/images/cultist.png'  class="govuk-!-margin-bottom-5" width="400">
+
+    <p class="govuk-body">Drop rock from top of boulder. perc check or dex dodge</p>
+
+    <p class="govuk-body">Dartmoor style surroundings</p>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >3a. quicksand (trap)</h2>
+
+    <div class="code-box">
+      <p class="govuk-body govuk-!-font-weight-bold"><i>As you start the morning of your third day riding your surroundings 
+        start to change again. Gone are the rocks and cliffs. Shrubs around you get larger and more tangled throughout the day.
+         The ground becomes increasingly wet and muddy and trees, misshapen and nobbled like old men appear all around you. The air becomes wet and humid and biting insects com thick and fast.
+         You are now on the outskirts of a very dank and foreboding swamp. The dry paths either continue to the straight into the swamp or circle around to the North.</i></p> 
+    </div>
+
+    <p class="govuk-body">Taking path into swamp -</p> 
+
+    <div class="code-box">
+      <p class="govuk-body govuk-!-font-weight-bold"><i>The air is thick with fog and insects of various sizes. Even the walkable land 
+        beneath your feet sinks with each step. The smell of decay fills your nostrals. Ahead of you through the fog you make out a large shape . 
+        As you draw in you see what appears to be a skeleton of a huge beast half submerged in the mud. Its the skeleton of a dragon, long decayed. 
+        However on the underside you can see some scales still intact, the incredible resilience lasting even now... </i></p> 
+    </div>
+
+    <p class="govuk-body">Quicksand - Dragon sinks after scales removed. luck (Dex) save to not sink. 5 squares to get out. Strength check to move.</p> 
+
+    <p>Giant leech attack if feel like it needs more.</p>
+
+    <img src='/public/images/leech.png'  class="govuk-!-margin-bottom-5" width="400">
+
+    <p class="govuk-body">North path takes much longer and loses more food. </p> 
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >4. Hag (NPC interaction)</h2>
+
+    <div class="code-box">
+      <p class="govuk-body govuk-!-font-weight-bold"><i>In the distance through the reeds and haze you can see a tree of tremendous width, 
+        30 foot wide at its largest. Long dead, it appears to be hollow and the warped and knarled bark opens at the side to make a kind of doorway. 
+        A feeble light emenates from within. </i></p> 
+
+        <p class="govuk-body govuk-!-font-weight-bold"><i>A weak, raspy and female voice beckons you nearer.</i></p> 
+    </div>
+
+    <img src='/public/images/hag.png'  class="govuk-!-margin-bottom-5" width="400">
+
+    <p class="govuk-body">Ixna the hag wants to use the adventurers to track down and kill a plant golem she raised. It was supposed to be 
+      her slave but the spell didn't quite work and it escaped. It is semi intelligent and just wants to be free.</p> 
+
+    <p class="govuk-body">She offers to guide the group to the temple if they return with proof that it is dead.</p> 
+
+    <img src='/public/images/plant-golem.png'  class="govuk-!-margin-bottom-5" width="400">
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >5. Temple entrance (puzzle)</h2>
+
+    <p class="govuk-body"></p> 
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >6. (combat)</h2>
+
+    <p class="govuk-body"></p> 
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >7. (trap)</h2>
+
+    <p class="govuk-body"></p> 
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >8. Final fight with the High priest (Combat))</h2>
+
+    <p class="govuk-body"></p> 
+
+   
+  </div>
+</div>
+
+{% endblock %}
